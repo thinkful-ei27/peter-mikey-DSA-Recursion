@@ -1,4 +1,5 @@
-'use-strict';
+'use strict';
+
 // Write a function that reverses a string. Take a string as input, 
 // reverse the string, and return the new string.
 
@@ -18,3 +19,13 @@ const reverseString = (str) => {
 const result = reverseString('hello');
 
 console.log(result); // Output => olleh
+
+const reverseStringTwo = (str) => {
+  // base case 
+  if (str === '') return '';
+
+  return reverseStringTwo(str.slice(1)) + str[0];
+};
+
+const resultTwo = reverseStringTwo('hello');
+console.log(resultTwo);
