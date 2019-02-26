@@ -25,14 +25,7 @@ console.log(anagram('east', ''));
 
 
 
-/* 
-east
-east    esat
-e -ast  e -sat
-a -st   s -
-s- t    a -t
-t- ''   t -''
-*/
+// Tauhida's solution for reference
 /* 
 function anagrams(prefix, str){
   if(str.length <= 1){
